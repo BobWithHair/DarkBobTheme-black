@@ -1,0 +1,49 @@
+#header  h1 {
+    color: red !important;
+}
+
+#menu, .nav-tile {
+  background-color: #262626 !important;
+  
+  a {
+    color: #9B9B9B !important;
+  }
+}
+
+.nav-item.active::after {
+  background-color: #9B9B9B !important;
+}
+
+.nav-item::after {
+  transform-origin: center;
+  transform: translateY(4px) scaleX(0.75);
+  transition: all .2s ease;
+}
+
+.nav-item.active::after, .nav-item:hover::after {
+  transform: translateY(0) scaleX(1);
+}
+
+.logo {
+  svg {
+    filter: drop-shadow(12px 10px 4px rgba(0,0,20,0.18));
+    transition: all .2s ease;
+  }
+}
+
+.logo:hover {
+  svg {
+    filter: drop-shadow(4px 4px 1px rgba(0,0,20,0.5));
+    transform: translate(1px, 1px);
+  }
+}
+
+  img {
+    filter: drop-shadow(12px 10px 4px rgba(0,0,20,0.18));
+    transition: all .2s ease;
+  }
+
+img:hover {
+    filter: drop-shadow(4px 4px 1px rgba(0,0,20,0.5));
+    transform: translate(1px, 1px);
+}
